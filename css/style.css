@@ -1,0 +1,26 @@
+         #header {
+            background-color: #744577; 
+            width: 100%;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            color: #fff !important;
+            gap: 1rem;
+        }
+
+        .logo {
+        color: #ffffff;
+        }
+  
