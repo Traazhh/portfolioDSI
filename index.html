@@ -12,6 +12,12 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <style>
+      html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+      }
+    </style>
   </head>
 
   <body data-bs-spy="scroll" data-bs-target="#navbar-utama" data-bs-offset="80">
@@ -46,16 +52,16 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">About Me</a>
+                <a class="nav-link active" href="#about">About Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills & Tools</a>
+                <a class="nav-link active" href="#skills">Skills & Tools</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link active" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link active" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -67,17 +73,18 @@
     <!-- home -->
     <main id="home" class="home pt-5">
       <div
-        class="main d-flex flex-column flex-md-row justify-content-center align-items-center ps-md-5 px-4 gap-5"
+        class="main d-flex flex-column flex-md-row justify-content-center align-items-center ps-md-5 px-4 gap-4 gap-md-5"
         style="min-height: calc(103vh - 75px); background-color: #f0e9b6"
       >
-        <div>
+        <div class="text-center text-md-start">
           <div data-aos="fade-right">
             <h2
               class="fw-bolder"
               style="
-                letter-spacing: 3px;
-                font-size: calc(2.5rem + 3vw);
+                letter-spacing: 2px;
+                font-size: calc(2rem + 1.5vw);
                 color: #744577;
+                line-height: 1.2;
               "
             >
               Ramadhan <br class="d-block d-md-none" />Putra Setiawan
@@ -90,18 +97,20 @@
             </span>
           </p>
 
-          <div class="d-flex gap-4">
+          <div
+            class="d-flex gap-3 justify-content-center justify-content-md-start"
+          >
             <a
               href="#about"
               class="btn btn-primary"
               style="
                 --bs-btn-padding-y: 0.5rem;
-                --bs-btn-padding-x: 0.5rem;
-                --bs-btn-font-size: 0.75rem;
+                --bs-btn-padding-x: 0.75rem;
+                --bs-btn-font-size: 0.8rem;
                 background-color: #744577;
                 border-color: #744577;
               "
-            > 
+            >
               Kenali Saya
             </a>
             <a
@@ -109,8 +118,8 @@
               class="btn btn-primary"
               style="
                 --bs-btn-padding-y: 0.5rem;
-                --bs-btn-padding-x: 0.5rem;
-                --bs-btn-font-size: 0.75rem;
+                --bs-btn-padding-x: 0.75rem;
+                --bs-btn-font-size: 0.8rem;
                 background-color: #744577;
                 border-color: #744577;
               "
@@ -120,18 +129,17 @@
           </div>
         </div>
 
-        <div class="d-flex justify-content-center w-100 style-img-container">
+        <div class="d-flex justify-content-center style-img-container ms-md-4">
           <div data-aos="fade-up">
             <img
               src="assets/img/adhan.jpeg"
               alt="Ramadhan Putra"
               class="img-fluid shadow-lg"
               style="
-              max-width: 800px;
-                width: 400px;
-                height: 470px;
+                max-width: 100%;
+                width: 380px;
+                height: 450px;
                 object-fit: cover;
-                margin-left: 150px;
                 border-radius: 50px;
               "
             />
@@ -160,8 +168,8 @@
           >
             Halo! Saya adalah siswa SMK Negeri 9 dengan jurusan Pengembangan
             Perangkat Lunak dan Gim (PPLG). Saya memiliki ketertarikan besar
-            pada dunia teknologi, khususnya Front-End Development, Internet
-            of Things (IoT), dan Data Analytics.
+            pada dunia teknologi, khususnya Front-End Development, Internet of
+            Things (IoT), dan Data Analytics.
           </p>
 
           <p
@@ -221,8 +229,8 @@
                 <div class="card-body text-center">
                   <h5 class="fw-bold">Web Development</h5>
                   <p class="card-text text-muted">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card’s content.
+                    Mampu membuat website sederhana yang responsif menggunakan
+                    HTML, CSS, Bootstrap, dan PHP Dasar.
                   </p>
                 </div>
               </div>
@@ -245,8 +253,8 @@
                   <h5 class="fw-bold">UI&UX CANVA DESIGN</h5>
 
                   <p class="card-text text-muted">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card’s content.
+                    Membuat desain antarmuka sederhana dengan memperhatikan
+                    tampilan yang rapi dan mudah digunakan.
                   </p>
                 </div>
               </div>
@@ -269,8 +277,8 @@
                   <h5 class="fw-bold">IoT Beginner</h5>
 
                   <p class="card-text text-muted">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card’s content.
+                    Memiliki pengalaman dasar dalam membuat proyek Internet of
+                    Things menggunakan mikrokontroler dan sensor.
                   </p>
                 </div>
               </div>
@@ -306,8 +314,7 @@
                   <div class="card-body text-center">
                     <h5 class="fw-bold">HTML</h5>
                     <p class="card-text text-muted">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card’s content.
+                     Digunakan untuk menyusun struktur dasar halaman website dan landasan utama.
                     </p>
                   </div>
                 </div>
@@ -329,8 +336,7 @@
                   <div class="card-body text-center">
                     <h5 class="fw-bold">BOOTSTRAP</h5>
                     <p class="card-text text-muted">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card’s content.
+                      Membantu membuat tampilan website yang responsif dengan lebih cepat.
                     </p>
                   </div>
                 </div>
@@ -352,60 +358,12 @@
                   <div class="card-body text-center">
                     <h5 class="fw-bold">FIGMA</h5>
                     <p class="card-text text-muted">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card’s content.
+                     Digunakan untuk membuat desain antarmuka dan prototype sebelum proses pengembangan.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-
-             <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-              <div data-aos="zoom-in">
-                <div
-                  class="card border-0 shadow-sm pt-4"
-                  style="width: 18rem; border-radius: 12px"
-                >
-                  <img
-                    src="assets/icon/arduino.png"
-                    class="d-block mx-auto"
-                    alt="Domain Icon"
-                    style="max-width: 100px; height: auto"
-                  />
-                  <div class="card-body text-center">
-                    <h5 class="fw-bold">ARDUINO IDE</h5>
-                    <p class="card-text text-muted">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card’s content.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-             <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-              <div data-aos="zoom-in">
-                <div
-                  class="card border-0 shadow-sm pt-4"
-                  style="width: 18rem; border-radius: 12px"
-                >
-                  <img
-                    src="assets/icon/php.png"
-                    class="d-block mx-auto"
-                    alt="Domain Icon"
-                    style="max-width: 100px; height: auto"
-                  />
-                  <div class="card-body text-center">
-                    <h5 class="fw-bold">PHP</h5>
-                    <p class="card-text text-muted">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card’s content.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
@@ -424,7 +382,7 @@
         >
           <br />
           <h1 class="fw-bold" style="color: #744577">Projects</h1>
-          <p style="color: #744577; max-width: 800px; text-align: center;">
+          <p style="color: #744577; max-width: 800px; text-align: center">
             There are many projects that I have ever done before
           </p>
         </div>
@@ -448,9 +406,14 @@
                     style="border-color: #744577 !important"
                   >
                     <h4 class="fw-bold my-3 fs-5">User Interface Aplikasi</h4>
+                    <p style="text-align: justify">
+                      Desain antarmuka aplikasi mobile yang dibuat dengan fokus
+                      pada tampilan yang sederhana, rapi, dan mudah digunakan
+                      oleh pengguna.
+                    </p>
                     <div class="d-flex justify-content-center gap-2 mt-3">
                       <a
-                        href="#link"
+                        href="https://www.figma.com/proto/rnqNieRntYkNTLcTpemTDY/APLIKASI-KASIR?node-id=1-2&p=f&t=Yimi76jWb4s3GsqB-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
                         class="btn btn-sm text-white px-3 py-2"
                         style="
                           background-color: #744577;
@@ -461,7 +424,7 @@
                         Lihat Preview
                       </a>
                       <a
-                        href="#footer"
+                        href="#contact"
                         class="btn btn-sm text-white px-3 py-2"
                         style="
                           background-color: #744577;
@@ -493,12 +456,17 @@
                     class="card-body p-4 d-flex flex-column justify-content-between border-top border-4"
                     style="border-color: #744577 !important"
                   >
-                    <h4 class="fw-bold my-3 fs-5">ThermoWatch - Sistem Monitoring AC</h4>
-                    <p class=""> testes
+                    <h4 class="fw-bold my-3 fs-5">
+                      ThermoWatch - Sistem Monitoring AC
+                    </h4>
+                    <p style="text-align: justify">
+                      Website monitoring AC yang dibuat untuk menampilkan data
+                      suhu dan kondisi perangkat secara sederhana dan mudah
+                      dipantau.
                     </p>
                     <div class="d-flex justify-content-center gap-2 mt-3">
                       <a
-                        href="#link"
+                        href="https://script.google.com/macros/s/AKfycbxB9EKLPysMcoqaVcRWPGZYNwXl4IGrFdNdITe0xL5JExkKEdXItGHBRxx02f7sPrwv/exec"
                         class="btn btn-sm text-white px-3 py-2"
                         style="
                           background-color: #744577;
@@ -509,7 +477,7 @@
                         Lihat Preview
                       </a>
                       <a
-                        href="#footer"
+                        href="#contact"
                         class="btn btn-sm text-white px-3 py-2"
                         style="
                           background-color: #744577;
@@ -542,6 +510,11 @@
                     style="border-color: #744577 !important"
                   >
                     <h4 class="fw-bold my-3 fs-5">Formulir</h4>
+                    <p style="text-align: justify">
+                      Website formulir sederhana yang digunakan untuk mengelola
+                      dan menyimpan data pengguna dengan tampilan yang mudah
+                      dipahami.
+                    </p>
                     <div class="d-flex justify-content-center gap-2 mt-3">
                       <a
                         href="https://github.com/Traazhh/TampilanForm"
@@ -555,7 +528,7 @@
                         Lihat Preview
                       </a>
                       <a
-                        href="#footer"
+                        href="#contact"
                         class="btn btn-sm text-white px-3 py-2"
                         style="
                           background-color: #744577;
@@ -601,9 +574,14 @@
           berusaha merespons setiap pesan secepat mungkin. Terima kasih telah
           mengunjungi portfolio saya, semoga kita dapat menciptakan sesuatu yang
           bermanfaat bersama.
-        </p> <br>
-        <p class="text-white px-4 px-md-0 fw-bold"
-        style="text-align: center; max-width: 700px;"> ramadhanputraset@gmail.com</p>
+        </p>
+        <br />
+        <p
+          class="text-white px-4 px-md-0 fw-bold"
+          style="text-align: center; max-width: 700px"
+        >
+          ramadhanputraset@gmail.com
+        </p>
 
         <div
           class="d-flex justify-content-center align-items-center gap-4 mt-4"
@@ -619,7 +597,7 @@
               alt="WhatsApp"
               style="width: 35px; height: 35px; object-fit: contain"
             />
-      </a>
+          </a>
 
           <a
             href="https://github.com/Traazhh"
@@ -655,8 +633,13 @@
       style="min-height: calc(30vh - 75px); background-color: #462248"
       class="d-flex flex-column justify-content-center align-items-center pt-5 pb-5"
     >
-  <h1 class="text-white" style="text-align: center; justify-content: center;">THANK YOU</h1>
-  </footer>
+      <h1
+        class="text-white"
+        style="text-align: center; justify-content: center"
+      >
+        THANK YOU
+      </h1>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
